@@ -40,7 +40,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'autoprefixer-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'font-awesome-sass', '~> 5.6.1'
+  gem 'simple_form'
 end
 
 group :development do

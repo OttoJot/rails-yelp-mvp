@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Add new Restaurant:</h1>
+  <%= form_for(@restaurant) do |f| %>
+    <p>Enter a name: <%= f.text_field :name, placeholder: "name" %></p>
+    <p>Enter address: <%= f.text_field :address, placeholder: "Address" %></p>
+    <p>Enter phone_number: <%= f.text_field :phone_number, placeholder: "Phone number" %></p>
+    <p>Enter category: <%= f.text_field :category, placeholder: "Category" %></p>
+
+    <%= f.submit %>
+  <% end %>
+  <br>
+  <br>
+  <%= link_to 'Go back',  restaurants_path %>
+</div>
